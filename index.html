@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="tg">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0b1830" />
+    <meta
+      name="description"
+      content="Ҷавоб ба саволҳои маъмул дар бораи интихоб, харид ва истифодаи инкубаторҳо дар Тоҷикистон."
+    />
+    <title>Саволу ҷавоб | Мағозаи инкубаторҳо</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <script src="data/faqs.js" defer></script>
+    <script src="assets/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#faq-list">Ба саволҳо гузаред</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="./" aria-label="Мағозаи инкубаторҳо — саҳифаи асосӣ">
+          <span class="brand-mark" aria-hidden="true">M</span>
+          <span class="brand-copy">
+            <strong>Мағозаи инкубаторҳо</strong>
+            <small>Душанбе · Тоҷикистон</small>
+          </span>
+        </a>
+        <a class="header-contact" data-whatsapp-link href="#contact">
+          <span class="contact-dot" aria-hidden="true"></span>
+          Тамос дар WhatsApp
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-inner">
+          <p class="eyebrow">Маркази маълумот</p>
+          <h1 id="page-title">Ҷавоб ба саволҳои шумо</h1>
+          <p class="hero-text">
+            Маълумоти зарурӣ барои интихоб, харид ва истифодаи дурусти инкубатор.
+          </p>
+
+          <form class="search-shell" id="search-form" role="search">
+            <label class="sr-only" for="faq-search">Ҷустуҷӯ дар саволу ҷавоб</label>
+            <span class="search-icon" aria-hidden="true"></span>
+            <input
+              id="faq-search"
+              name="q"
+              type="search"
+              autocomplete="off"
+              placeholder="Масалан: кафолат, доставка, ҳарорат…"
+            />
+            <kbd title="Барои ҷустуҷӯ тугмаи /-ро пахш кунед">/</kbd>
+            <button class="clear-search" id="clear-search" type="button" hidden>
+              Пок кардан
+            </button>
+          </form>
+
+          <div class="trust-row" aria-label="Маълумоти кӯтоҳ">
+            <span><strong>12+</strong> намуд</span>
+            <span><strong>30–500</strong> тухм</span>
+            <span><strong>3–6 моҳ</strong> кафолат</span>
+            <span><strong>24/7</strong> дастгирӣ</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section" aria-label="Саволҳои маъмул">
+        <div class="faq-layout">
+          <aside class="category-panel" aria-label="Категорияҳои саволҳо">
+            <div class="category-heading">
+              <span>Категорияҳо</span>
+              <span id="total-count" aria-label="Шумораи умумии саволҳо"></span>
+            </div>
+            <nav class="category-list" id="category-list"></nav>
+            <div class="mini-contact">
+              <p>Ҷавоби худро наёфтед?</p>
+              <a data-whatsapp-link href="#contact">Ба мо нависед <span aria-hidden="true">↗</span></a>
+            </div>
+          </aside>
+
+          <div class="faq-content">
+            <div class="content-toolbar">
+              <div>
+                <p class="section-kicker" id="active-category-label">Ҳамаи саволҳо</p>
+                <h2>Маълумоти равшан, дар як ҷой</h2>
+              </div>
+              <button class="text-button" id="toggle-all" type="button">Ҳамаро кушодан</button>
+            </div>
+
+            <div class="active-search" id="active-search" hidden aria-live="polite"></div>
+            <div class="faq-list" id="faq-list"></div>
+
+            <div class="empty-state" id="empty-state" hidden>
+              <div class="empty-symbol" aria-hidden="true">?</div>
+              <h3>Ҷавобе ёфт нашуд</h3>
+              <p>Ибораи кӯтоҳтарро нависед ё категорияи дигарро интихоб кунед.</p>
+              <button class="secondary-button" id="reset-filters" type="button">Нишон додани ҳамаи саволҳо</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-band" id="contact" aria-labelledby="contact-title">
+        <div>
+          <p class="eyebrow">Маслиҳати мустақим</p>
+          <h2 id="contact-title">Барои интихоби инкубатор кумак мекунем</h2>
+          <p>Ҳаҷми дилхоҳ ва навъи тухмро нависед — модели мувофиқро пешниҳод мекунем.</p>
+        </div>
+        <a class="primary-button" data-whatsapp-link href="#">Навиштан дар WhatsApp</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <strong>Мағозаи инкубаторҳо</strong>
+        <p data-address></p>
+      </div>
+      <div class="footer-meta">
+        <a data-phone-link href="#"></a>
+        <span>© <span id="current-year"></span></span>
+      </div>
+    </footer>
+
+    <noscript>
+      <div class="noscript">Барои истифодаи ҷустуҷӯ JavaScript-ро фаъол намоед.</div>
+    </noscript>
+  </body>
+</html>
