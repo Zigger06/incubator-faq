@@ -1,0 +1,170 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "code": "1411",
+      "name": "Инкубатор на 112 яиц",
+      "image": "images/1411.jpg"
+    },
+    {
+      "code": "2011",
+      "name": "Инкубатор на 64 яиц",
+      "image": "images/2011.jpg"
+    },
+    {
+      "code": "2021",
+      "name": "Инкубатор на 128 яиц",
+      "image": "images/2021.jpg"
+    },
+    {
+      "code": "2031",
+      "name": "Инкубатор на 192 яиц",
+      "image": "images/2031.jpg"
+    },
+    {
+      "code": "2441",
+      "name": "Инкубатор на 256 яиц",
+      "image": "images/2441.jpg"
+    },
+    {
+      "code": "2461",
+      "name": "Инкубатор на 384 яиц",
+      "image": "images/2461.jpg"
+    },
+    {
+      "code": "2471",
+      "name": "Инкубатор на 448 яиц",
+      "image": "images/2471.jpg"
+    },
+    {
+      "code": "3021A",
+      "name": "Инкубатор на 128 яиц",
+      "image": "images/3021A.jpg"
+    },
+    {
+      "code": "3031A",
+      "name": "Инкубатор на 192 яиц",
+      "image": "images/3031A.jpg"
+    },
+    {
+      "code": "3041A",
+      "name": "Инкубатор на 256 яиц",
+      "image": "images/3041A.jpg"
+    },
+    {
+      "code": "3051A",
+      "name": "Инкубатор на 320 яиц",
+      "image": "images/3051A.jpg"
+    },
+    {
+      "code": "3241A",
+      "name": "Инкубатор на 64 яиц",
+      "image": "images/3241A.jpg"
+    },
+    {
+      "code": "3251A",
+      "name": "Инкубатор на 100 яиц",
+      "image": "images/3251A.jpg"
+    },
+    {
+      "code": "3281A",
+      "name": "Инкубатор на 200 яиц",
+      "image": "images/3281A.jpg"
+    },
+    {
+      "code": "3301A",
+      "name": "Инкубатор на 300 яиц",
+      "image": "images/3301A.jpg"
+    },
+    {
+      "code": "3311A",
+      "name": "Инкубатор на 400 яиц",
+      "image": "images/3311A.jpg"
+    },
+    {
+      "code": "3341A",
+      "name": "Инкубатор на 64 яиц",
+      "image": "images/3341A.jpg"
+    },
+    {
+      "code": "3351A",
+      "name": "Инкубатор на 128 яиц",
+      "image": "images/3351A.jpg"
+    },
+    {
+      "code": "3391A",
+      "name": "Инкубатор на 200 яиц",
+      "image": "images/3391A.jpg"
+    },
+    {
+      "code": "3401A",
+      "name": "Инкубатор на 300 яиц",
+      "image": "images/3401A.jpg"
+    },
+    {
+      "code": "3411A",
+      "name": "Инкубатор на 400 яиц",
+      "image": "images/3411A.jpg"
+    },
+    {
+      "code": "6151A",
+      "name": "Инкубатор на 64 яиц",
+      "image": "images/6151A.jpg"
+    },
+    {
+      "code": "7221A",
+      "name": "Инкубатор на 30 яиц",
+      "image": "images/7221A.jpg"
+    },
+    {
+      "code": "7241A",
+      "name": "Инкубатор на 70 яиц",
+      "image": "images/7241A.jpg"
+    },
+    {
+      "code": "7421A",
+      "name": "Инкубатор на 30 яиц",
+      "image": "images/7421A.jpg"
+    },
+    {
+      "code": "7441A",
+      "name": "Инкубатор на 70 яиц",
+      "image": "images/7441A.jpg"
+    },
+    {
+      "code": "7651A",
+      "name": "Инкубатор на 128 яиц",
+      "image": "images/7651A.jpg"
+    },
+    {
+      "code": "7661A",
+      "name": "Инкубатор на 200 яиц",
+      "image": "images/7661A.jpg"
+    },
+    {
+      "code": "7681A",
+      "name": "Инкубатор на 300 яиц",
+      "image": "images/7681A.jpg"
+    },
+    {
+      "code": "7691A",
+      "name": "Инкубатор на 400 яиц",
+      "image": "images/7691A.jpg"
+    },
+    {
+      "code": "7791A",
+      "name": "Инкубатор на 500 яиц",
+      "image": "images/7791A.jpg"
+    },
+    {
+      "code": "7821A",
+      "name": "Инкубатор на 80 яиц",
+      "image": "images/7821A.jpg"
+    },
+    {
+      "code": "7831A",
+      "name": "Инкубатор на 248 яиц",
+      "image": "images/7831A.jpg"
+    }
+  ]
+}

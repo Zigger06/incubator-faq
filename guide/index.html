@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="tg">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24493b">
+  <meta name="description" content="Инкубатори худро аз рӯйи код ё акс ёбед. Феҳристи моделҳо ва видеоҳо барои шиносоӣ бо инкубатори шумо.">
+  <title>Инкубаторҳо — дастурҳо барои моделҳо</title>
+  <link rel="stylesheet" href="assets/site.css">
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Гузаштан ба матн</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="./" aria-label="Инкубаторҳо. Саҳифаи асосӣ">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 38" fill="none"><path d="M16 3C10 3 4 17 4 24a12 12 0 0 0 24 0C28 17 22 3 16 3Z" stroke="currentColor" stroke-width="2.2"/><path d="M10 24c0 3.3 2.7 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg></span>
+        <span class="brand-copy"><strong>Инкубаторҳо</strong><span>Дастурҳо барои моделҳо</span></span>
+      </a>
+      <nav class="header-nav" aria-label="Пайвандҳои асосӣ"><a href="../">Саволу ҷавоб</a><a href="#catalog">Ҳамаи моделҳо <span aria-hidden="true">↗</span></a></nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <span class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> Маълумот барои модели шумо</span>
+        <h1 id="hero-title">Инкубатори худро<br><em>беҳтар шиносед.</em></h1>
+        <p class="hero-description">Модели худро аз рӯйи код ё акс ёбед.<br class="desktop-break"> Саҳифаи онро кушоед ва видеоро тамошо кунед.</p>
+        <a class="button button--primary" href="#catalog">Интихоби инкубатор <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-6-6 6 6-6 6"/></svg></a>
+        <div class="hero-footnote"><span class="tiny-egg" aria-hidden="true"></span><span>33 модел дар як феҳрист</span></div>
+      </div>
+      <a class="featured-card" href="models/3251a/" aria-label="Тамошои видеои модели 3251A барои 100 тухм">
+        <div class="featured-card__top"><span class="eyebrow">Шиносоӣ бо модел</span><span class="model-badge is-video"><span aria-hidden="true">▶</span> Видео ҳаст</span></div>
+        <div class="featured-card__visual"><span class="featured-orbit" aria-hidden="true"></span><img src="assets/images/3251A.jpg" alt="Инкубатори 3251A барои 100 тухм" width="256" height="256" fetchpriority="high"><span class="featured-code" aria-hidden="true">3251A</span></div>
+        <div class="featured-card__bottom"><div><span class="model-code">Модели 3251A</span><h2>Инкубатор барои 100 тухм</h2></div><span class="round-arrow" aria-hidden="true">↗</span></div>
+      </a>
+    </section>
+
+    <section class="how-to container" aria-label="Чӣ тавр модели худро ёбем">
+      <div class="how-to__item"><span class="step-number">01</span><div><h2>Кодро ёбед</h2><p>Коди моделро дар феҳрист ё фармоиш бинед.</p></div></div>
+      <div class="how-to__item"><span class="step-number">02</span><div><h2>Аксро муқоиса кунед</h2><p>Моделҳои гуногун метавонанд ғунҷоиши якхела дошта бошанд.</p></div></div>
+      <div class="how-to__item"><span class="step-number">03</span><div><h2>Видеоро кушоед</h2><p>Моделҳои дорои видео бо нишони «Видео ҳаст» ишора шудаанд.</p></div></div>
+    </section>
+
+    <section class="catalog-section container" id="catalog" aria-labelledby="catalog-title">
+      <div class="section-heading"><div><span class="eyebrow">Феҳристи моделҳо</span><h2 id="catalog-title">Модели худро ёбед</h2></div><p>Аз код оғоз кунед.<br>Ё модели худро аз рӯйи акс ёбед.</p></div>
+      <form class="catalog-toolbar" role="search">
+        <div class="search-field"><label class="sr-only" for="model-search">Коди модел ё ғунҷоиш</label><svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 4.5 4.5"/></svg><input id="model-search" name="q" type="search" placeholder="Коди модел ё ғунҷоиш" autocomplete="off" enterkeyhint="search"><button id="clear-search" class="clear-search" type="button" aria-label="Тоза кардани ҷустуҷӯ" hidden>×</button></div>
+        <div class="capacity-field"><label class="sr-only" for="capacity-filter">Ғунҷоиши инкубатор</label><select id="capacity-filter" name="capacity"><option value="all">Ҳамаи ҳаҷмҳо</option>
+<option value="30">30 тухм</option>
+<option value="64">64 тухм</option>
+<option value="70">70 тухм</option>
+<option value="80">80 тухм</option>
+<option value="100">100 тухм</option>
+<option value="112">112 тухм</option>
+<option value="128">128 тухм</option>
+<option value="192">192 тухм</option>
+<option value="200">200 тухм</option>
+<option value="248">248 тухм</option>
+<option value="256">256 тухм</option>
+<option value="300">300 тухм</option>
+<option value="320">320 тухм</option>
+<option value="384">384 тухм</option>
+<option value="400">400 тухм</option>
+<option value="448">448 тухм</option>
+<option value="500">500 тухм</option></select></div>
+      </form>
+      <div class="catalog-meta"><div class="filter-tabs" aria-label="Мавҷудияти видео"><button type="button" class="filter-tab is-active" data-filter="all" aria-pressed="true">Ҳамаи моделҳо <span>33</span></button><button type="button" class="filter-tab" data-filter="video" aria-pressed="false"><span class="play-tiny" aria-hidden="true">▶</span> Бо видео</button></div><p id="results-count" class="results-count" aria-live="polite">33 модел</p></div>
+      <div id="model-grid" class="model-grid"><button type="button" class="model-card" data-code="1411" aria-label="Инкубатор барои 112 тухм, коди 1411">
+      <div class="model-card__top"><span class="model-code">1411</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/1411.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 112 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="2011" aria-label="Инкубатор барои 64 тухм, коди 2011">
+      <div class="model-card__top"><span class="model-code">2011</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/2011.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 64 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="2021" aria-label="Инкубатор барои 128 тухм, коди 2021">
+      <div class="model-card__top"><span class="model-code">2021</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/2021.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 128 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="2031" aria-label="Инкубатор барои 192 тухм, коди 2031">
+      <div class="model-card__top"><span class="model-code">2031</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/2031.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 192 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="2441" aria-label="Инкубатор барои 256 тухм, коди 2441">
+      <div class="model-card__top"><span class="model-code">2441</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/2441.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 256 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="2461" aria-label="Инкубатор барои 384 тухм, коди 2461">
+      <div class="model-card__top"><span class="model-code">2461</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/2461.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 384 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="2471" aria-label="Инкубатор барои 448 тухм, коди 2471">
+      <div class="model-card__top"><span class="model-code">2471</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/2471.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 448 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="3021A" aria-label="Инкубатор барои 128 тухм, коди 3021A">
+      <div class="model-card__top"><span class="model-code">3021A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/3021A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 128 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="3031A" aria-label="Инкубатор барои 192 тухм, коди 3031A">
+      <div class="model-card__top"><span class="model-code">3031A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/3031A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 192 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="3041A" aria-label="Инкубатор барои 256 тухм, коди 3041A">
+      <div class="model-card__top"><span class="model-code">3041A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/3041A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 256 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="3051A" aria-label="Инкубатор барои 320 тухм, коди 3051A">
+      <div class="model-card__top"><span class="model-code">3051A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/3051A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 320 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="3241A" aria-label="Инкубатор барои 64 тухм, коди 3241A">
+      <div class="model-card__top"><span class="model-code">3241A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/3241A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 64 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<a href="models/3251a/" class="model-card" data-code="3251A" aria-label="Инкубатор барои 100 тухм, коди 3251A">
+      <div class="model-card__top"><span class="model-code">3251A</span><span class="model-badge is-video">Видео ҳаст</span></div>
+      <div class="model-card__image"><img src="assets/images/3251A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 100 тухм</h3><span class="model-card__action">Тамошои видео <span aria-hidden="true">↗</span></span>
+    </a>
+<button type="button" class="model-card" data-code="3281A" aria-label="Инкубатор барои 200 тухм, коди 3281A">
+      <div class="model-card__top"><span class="model-code">3281A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/3281A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 200 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="3301A" aria-label="Инкубатор барои 300 тухм, коди 3301A">
+      <div class="model-card__top"><span class="model-code">3301A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/3301A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 300 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="3311A" aria-label="Инкубатор барои 400 тухм, коди 3311A">
+      <div class="model-card__top"><span class="model-code">3311A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/3311A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 400 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="3341A" aria-label="Инкубатор барои 64 тухм, коди 3341A">
+      <div class="model-card__top"><span class="model-code">3341A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/3341A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 64 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="3351A" aria-label="Инкубатор барои 128 тухм, коди 3351A">
+      <div class="model-card__top"><span class="model-code">3351A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/3351A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 128 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="3391A" aria-label="Инкубатор барои 200 тухм, коди 3391A">
+      <div class="model-card__top"><span class="model-code">3391A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/3391A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 200 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="3401A" aria-label="Инкубатор барои 300 тухм, коди 3401A">
+      <div class="model-card__top"><span class="model-code">3401A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/3401A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 300 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="3411A" aria-label="Инкубатор барои 400 тухм, коди 3411A">
+      <div class="model-card__top"><span class="model-code">3411A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/3411A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 400 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="6151A" aria-label="Инкубатор барои 64 тухм, коди 6151A">
+      <div class="model-card__top"><span class="model-code">6151A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/6151A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 64 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="7221A" aria-label="Инкубатор барои 30 тухм, коди 7221A">
+      <div class="model-card__top"><span class="model-code">7221A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/7221A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 30 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="7241A" aria-label="Инкубатор барои 70 тухм, коди 7241A">
+      <div class="model-card__top"><span class="model-code">7241A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/7241A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 70 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="7421A" aria-label="Инкубатор барои 30 тухм, коди 7421A">
+      <div class="model-card__top"><span class="model-code">7421A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/7421A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 30 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="7441A" aria-label="Инкубатор барои 70 тухм, коди 7441A">
+      <div class="model-card__top"><span class="model-code">7441A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/7441A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 70 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="7651A" aria-label="Инкубатор барои 128 тухм, коди 7651A">
+      <div class="model-card__top"><span class="model-code">7651A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/7651A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 128 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="7661A" aria-label="Инкубатор барои 200 тухм, коди 7661A">
+      <div class="model-card__top"><span class="model-code">7661A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/7661A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 200 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="7681A" aria-label="Инкубатор барои 300 тухм, коди 7681A">
+      <div class="model-card__top"><span class="model-code">7681A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/7681A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 300 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="7691A" aria-label="Инкубатор барои 400 тухм, коди 7691A">
+      <div class="model-card__top"><span class="model-code">7691A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/7691A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 400 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="7791A" aria-label="Инкубатор барои 500 тухм, коди 7791A">
+      <div class="model-card__top"><span class="model-code">7791A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/7791A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 500 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="7821A" aria-label="Инкубатор барои 80 тухм, коди 7821A">
+      <div class="model-card__top"><span class="model-code">7821A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/7821A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 80 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button>
+<button type="button" class="model-card" data-code="7831A" aria-label="Инкубатор барои 248 тухм, коди 7831A">
+      <div class="model-card__top"><span class="model-code">7831A</span><span class="model-badge">Акси модел</span></div>
+      <div class="model-card__image"><img src="assets/images/7831A.jpg" alt="" width="256" height="256" loading="lazy" decoding="async"></div>
+      <h3 class="model-card__name">Инкубатор барои 248 тухм</h3><span class="model-card__action">Дидани модел <span aria-hidden="true">↗</span></span>
+    </button></div>
+      <div id="empty-state" class="empty-state" hidden><span class="empty-state__mark" aria-hidden="true">⌕</span><h3>Модел ёфт нашуд</h3><p>Коди дигарро ворид кунед ё филтрҳоро тоза кунед.</p><button type="button" id="reset-filters" class="button button--secondary">Тоза кардани филтрҳо</button></div>
+      <noscript><p class="notice">Барои ҷустуҷӯ JavaScript лозим аст. Ҳамаи моделҳо дар феҳристи боло ҳастанд; саҳифаи 3251A тавассути пайванд кушода мешавад.</p></noscript>
+      <div class="catalog-note"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v1"/></svg><p>Феҳрист тадриҷан пурра мешавад. Агар барои модел ҳоло видео набошад, акс ва коди он ба ёфтани инкубатори лозимӣ кӯмак мекунанд.</p></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a href="./" class="footer-brand">Инкубаторҳо <span>/ Дастурҳо</span></a><a class="footer-faq" href="../">Саволу ҷавоб ↗</a><span class="footer-year">© 2026</span></div></footer>
+  <dialog id="model-dialog" class="model-dialog" aria-labelledby="dialog-title" aria-describedby="dialog-name">
+    <button id="dialog-close" type="button" class="dialog-close" aria-label="Пӯшидани равзанаи модел">×</button><div class="dialog-image-wrap"><img id="dialog-image" src="assets/images/3251A.jpg" alt="" width="256" height="256"></div><div class="dialog-copy"><span id="dialog-code" class="model-code"></span><h2 id="dialog-title">Модели инкубатор</h2><p id="dialog-name"></p><div id="dialog-video" class="dialog-availability"></div><button id="dialog-share" type="button" class="button button--secondary"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 15 15 9m-8 4-2 2a4 4 0 0 0 6 6l3-3m-4-12 3-3a4 4 0 0 1 6 6l-2 2"/></svg>Нусхабардории пайванд</button><p id="dialog-share-status" class="share-status" aria-live="polite"></p></div>
+  </dialog>
+  <script id="model-data" type="application/json">[{"code": "1411", "name": "Инкубатор барои 112 тухм", "image": "assets/images/1411.jpg", "capacity": 112, "hasVideo": false}, {"code": "2011", "name": "Инкубатор барои 64 тухм", "image": "assets/images/2011.jpg", "capacity": 64, "hasVideo": false}, {"code": "2021", "name": "Инкубатор барои 128 тухм", "image": "assets/images/2021.jpg", "capacity": 128, "hasVideo": false}, {"code": "2031", "name": "Инкубатор барои 192 тухм", "image": "assets/images/2031.jpg", "capacity": 192, "hasVideo": false}, {"code": "2441", "name": "Инкубатор барои 256 тухм", "image": "assets/images/2441.jpg", "capacity": 256, "hasVideo": false}, {"code": "2461", "name": "Инкубатор барои 384 тухм", "image": "assets/images/2461.jpg", "capacity": 384, "hasVideo": false}, {"code": "2471", "name": "Инкубатор барои 448 тухм", "image": "assets/images/2471.jpg", "capacity": 448, "hasVideo": false}, {"code": "3021A", "name": "Инкубатор барои 128 тухм", "image": "assets/images/3021A.jpg", "capacity": 128, "hasVideo": false}, {"code": "3031A", "name": "Инкубатор барои 192 тухм", "image": "assets/images/3031A.jpg", "capacity": 192, "hasVideo": false}, {"code": "3041A", "name": "Инкубатор барои 256 тухм", "image": "assets/images/3041A.jpg", "capacity": 256, "hasVideo": false}, {"code": "3051A", "name": "Инкубатор барои 320 тухм", "image": "assets/images/3051A.jpg", "capacity": 320, "hasVideo": false}, {"code": "3241A", "name": "Инкубатор барои 64 тухм", "image": "assets/images/3241A.jpg", "capacity": 64, "hasVideo": false}, {"code": "3251A", "name": "Инкубатор барои 100 тухм", "image": "assets/images/3251A.jpg", "capacity": 100, "hasVideo": true}, {"code": "3281A", "name": "Инкубатор барои 200 тухм", "image": "assets/images/3281A.jpg", "capacity": 200, "hasVideo": false}, {"code": "3301A", "name": "Инкубатор барои 300 тухм", "image": "assets/images/3301A.jpg", "capacity": 300, "hasVideo": false}, {"code": "3311A", "name": "Инкубатор барои 400 тухм", "image": "assets/images/3311A.jpg", "capacity": 400, "hasVideo": false}, {"code": "3341A", "name": "Инкубатор барои 64 тухм", "image": "assets/images/3341A.jpg", "capacity": 64, "hasVideo": false}, {"code": "3351A", "name": "Инкубатор барои 128 тухм", "image": "assets/images/3351A.jpg", "capacity": 128, "hasVideo": false}, {"code": "3391A", "name": "Инкубатор барои 200 тухм", "image": "assets/images/3391A.jpg", "capacity": 200, "hasVideo": false}, {"code": "3401A", "name": "Инкубатор барои 300 тухм", "image": "assets/images/3401A.jpg", "capacity": 300, "hasVideo": false}, {"code": "3411A", "name": "Инкубатор барои 400 тухм", "image": "assets/images/3411A.jpg", "capacity": 400, "hasVideo": false}, {"code": "6151A", "name": "Инкубатор барои 64 тухм", "image": "assets/images/6151A.jpg", "capacity": 64, "hasVideo": false}, {"code": "7221A", "name": "Инкубатор барои 30 тухм", "image": "assets/images/7221A.jpg", "capacity": 30, "hasVideo": false}, {"code": "7241A", "name": "Инкубатор барои 70 тухм", "image": "assets/images/7241A.jpg", "capacity": 70, "hasVideo": false}, {"code": "7421A", "name": "Инкубатор барои 30 тухм", "image": "assets/images/7421A.jpg", "capacity": 30, "hasVideo": false}, {"code": "7441A", "name": "Инкубатор барои 70 тухм", "image": "assets/images/7441A.jpg", "capacity": 70, "hasVideo": false}, {"code": "7651A", "name": "Инкубатор барои 128 тухм", "image": "assets/images/7651A.jpg", "capacity": 128, "hasVideo": false}, {"code": "7661A", "name": "Инкубатор барои 200 тухм", "image": "assets/images/7661A.jpg", "capacity": 200, "hasVideo": false}, {"code": "7681A", "name": "Инкубатор барои 300 тухм", "image": "assets/images/7681A.jpg", "capacity": 300, "hasVideo": false}, {"code": "7691A", "name": "Инкубатор барои 400 тухм", "image": "assets/images/7691A.jpg", "capacity": 400, "hasVideo": false}, {"code": "7791A", "name": "Инкубатор барои 500 тухм", "image": "assets/images/7791A.jpg", "capacity": 500, "hasVideo": false}, {"code": "7821A", "name": "Инкубатор барои 80 тухм", "image": "assets/images/7821A.jpg", "capacity": 80, "hasVideo": false}, {"code": "7831A", "name": "Инкубатор барои 248 тухм", "image": "assets/images/7831A.jpg", "capacity": 248, "hasVideo": false}]</script>
+</body>
+</html>
