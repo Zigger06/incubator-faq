@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="tg" data-result="neutral">
+<head>
+  <meta charset="utf-8">
+  <script>
+    // Keep only a coarse result. Never retain, display or transmit callback credentials.
+    (() => {
+      let result = 'neutral';
+      try {
+        const fragment = new URLSearchParams(location.hash.slice(1));
+        const query = new URLSearchParams(location.search);
+        if (fragment.has('error') || fragment.has('error_code') || query.has('error') || query.has('error_code')) {
+          result = 'error';
+        } else if (fragment.get('type') === 'signup' && fragment.has('access_token') && fragment.has('refresh_token')) {
+          result = 'success';
+        }
+      } finally {
+        try { history.replaceState(null, '', location.pathname); } catch (_) { /* No network fallback. */ }
+        document.documentElement.dataset.result = result;
+      }
+    })();
+  </script>
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#24493b">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Бозгашт ба барномаи Incubator Manager пас аз тасдиқи email.">
+  <title>Тасдиқи email — Incubator Manager</title>
+  <style>
+    :root{font-family:"Segoe UI",Arial,sans-serif;color:#26392f;background:#f7f6f0;line-height:1.6;font-synthesis:none}
+    *{box-sizing:border-box}body{margin:0;min-width:0}a{color:#24493b}button{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible{outline:3px solid #b96743;outline-offset:4px}[hidden]{display:none!important}
+    .shell{width:min(700px,calc(100% - 40px));margin:auto}.header{display:flex;justify-content:space-between;align-items:center;gap:20px;padding:25px 0}.brand{display:flex;align-items:center;gap:12px;color:#24493b;font-weight:650;line-height:1.25}.brand svg{width:29px;height:36px;flex:none}.brand small{display:block;color:#69736b;font-size:11px;font-weight:400;letter-spacing:.08em;margin-top:4px;text-transform:uppercase}.language{display:flex;border:1px solid #dedfd5;border-radius:9px;padding:3px;gap:3px}.language button{border:0;border-radius:6px;background:transparent;color:#69736b;padding:8px 11px;min-height:40px;cursor:pointer;font-size:13px}.language button[aria-pressed="true"]{background:#24493b;color:#fff}
+    main{padding:30px 0 45px}.card{background:#fff;border:1px solid #dedfd5;border-radius:23px;padding:40px;box-shadow:0 10px 28px #27392c08}.status-icon{display:grid;place-items:center;width:60px;height:60px;border-radius:18px;background:#e9eee5;color:#24493b;margin-bottom:25px}.status-icon svg{width:28px;height:28px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}.eyebrow{color:#69736b;font-size:11px;text-transform:uppercase;letter-spacing:.12em;margin:0 0 10px}h1{font-size:clamp(28px,6vw,38px);line-height:1.2;letter-spacing:-.035em;font-weight:600;margin:0 0 17px}p{margin:0}p.intro{color:#69736b;font-size:16px}.steps{list-style:none;counter-reset:step;padding:25px 0 0;margin:26px 0 0;border-top:1px solid #dedfd5;display:grid;gap:19px}.steps li{counter-increment:step;display:flex;gap:14px;align-items:flex-start}.steps li:before{content:counter(step,decimal-leading-zero);color:#b96743;font-size:12px;font-weight:600;padding-top:3px;min-width:22px}.steps strong{font-weight:600}.ui-label{font-weight:600;color:#26392f}.note{margin-top:26px;padding:17px 19px;border-radius:10px;background:#f7f6f0;font-size:14px;color:#69736b}.footer{padding:23px 2px 0;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;color:#69736b;font-size:13px}.footer a{text-decoration:none}.footer a:hover{text-decoration:underline;text-underline-offset:4px}
+    [data-state]{display:none}html[data-result="neutral"] [data-state="neutral"],html[data-result="success"] [data-state="success"],html[data-result="error"] [data-state="error"]{display:block}html[data-result="error"] .status-icon{background:#f6eee7;color:#93512e}.icon-success,.icon-error{display:none}html[data-result="success"] .icon-neutral,html[data-result="error"] .icon-neutral{display:none}html[data-result="success"] .icon-success,html[data-result="error"] .icon-error{display:block}
+    @media(max-width:540px){.shell{width:calc(100% - 28px)}.header{padding:19px 1px;gap:10px}.brand{font-size:14px;gap:8px}.brand small{font-size:9px}.brand svg{width:24px;height:31px}.language button{padding:7px 9px;font-size:12px}main{padding:17px 0 28px}.card{padding:27px 23px;border-radius:18px}.status-icon{width:53px;height:53px;margin-bottom:23px}.steps{font-size:15px}.note{padding:15px;font-size:14px}.footer{font-size:12px}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="header">
+      <div class="brand"><svg viewBox="0 0 32 38" fill="none" aria-hidden="true"><path d="M16 3C10 3 4 17 4 24a12 12 0 0 0 24 0C28 17 22 3 16 3Z" stroke="currentColor" stroke-width="2.2"/><path d="M10 24c0 3.3 2.7 6 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg><span>Incubator Manager<small>Ҳамкории даста</small></span></div>
+      <nav class="language" aria-label="Забон / Язык"><button type="button" data-language="tg" aria-pressed="true">Тоҷикӣ</button><button type="button" data-language="ru" aria-pressed="false">Русский</button></nav>
+    </header>
+    <main>
+      <div class="card">
+        <div class="status-icon" aria-hidden="true">
+          <svg class="icon-neutral" viewBox="0 0 24 24"><path d="M14 8l4 4-4 4M18 12H6"/><path d="M10 4H5a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h5"/></svg>
+          <svg class="icon-success" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></svg>
+          <svg class="icon-error" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v6m0 4h.01"/></svg>
+        </div>
+        <section lang="tg" data-copy="tg" aria-label="Қадамҳои навбатӣ">
+          <p class="eyebrow">Аккаунти шахсии шумо</p>
+          <div data-state="neutral"><h1>Ба барнома баргардед</h1><p class="intro">Пас аз тасдиқи email, ба Incubator Manager баргардед ва ба аккаунти худ ворид шавед.</p></div>
+          <div data-state="success"><h1>Email тасдиқ шуд</h1><p class="intro">Акнун ба Incubator Manager баргардед ва бо email ва пароли худ ворид шавед.</p></div>
+          <div data-state="error"><h1>Пайванд дигар фаъол нест</h1><p class="intro">Эҳтимол муҳлати пайванд гузаштааст ё он аллакай истифода шудааст. Аввал кӯшиш кунед ба барнома ворид шавед — email метавонад аллакай тасдиқ шуда бошад.</p></div>
+          <ol class="steps">
+            <li><span>Дар телефони худ барномаи <strong>Incubator Manager</strong>-ро кушоед.</span></li>
+            <li><span>Ба <span class="ui-label" lang="ru">Настройки → Совместная работа → Открыть команду</span> гузаред.</span></li>
+            <li><span>Email ва пароли худро ворид кунед ва <span class="ui-label" lang="ru">«Войти»</span>-ро пахш кунед.</span></li>
+          </ol>
+          <p class="note" data-state="neutral">Ин саҳифаро пӯшидан мумкин аст. Воридшавӣ дар барномаи Android анҷом дода мешавад.</p>
+          <p class="note" data-state="success">Ин саҳифаро пӯшидан мумкин аст. Ҳар узви даста бо аккаунти шахсии худ ворид мешавад.</p>
+          <p class="note" data-state="error">Агар барнома ҳанӯз тасдиқи email-ро талаб кунад, сабти номро бо ҳамон email такрор кунед, то мактуби нав гиред. Пайванди мактуби навтаринро кушоед.</p>
+        </section>
+        <section lang="ru" data-copy="ru" aria-label="Следующие шаги" hidden>
+          <p class="eyebrow">Ваш личный аккаунт</p>
+          <div data-state="neutral"><h1>Вернитесь в приложение</h1><p class="intro">После подтверждения email вернитесь в Incubator Manager и войдите в свой аккаунт.</p></div>
+          <div data-state="success"><h1>Email подтверждён</h1><p class="intro">Теперь вернитесь в Incubator Manager и войдите со своим email и паролем.</p></div>
+          <div data-state="error"><h1>Ссылка больше не действует</h1><p class="intro">Возможно, срок ссылки истёк или она уже использована. Сначала попробуйте войти в приложение: email уже мог подтвердиться.</p></div>
+          <ol class="steps">
+            <li><span>Откройте <strong>Incubator Manager</strong> на телефоне.</span></li>
+            <li><span>Перейдите в <span class="ui-label">Настройки → Совместная работа → Открыть команду</span>.</span></li>
+            <li><span>Введите свой email и пароль, затем нажмите <span class="ui-label">«Войти»</span>.</span></li>
+          </ol>
+          <p class="note" data-state="neutral">Эту страницу можно закрыть. Вход выполняется в приложении Android.</p>
+          <p class="note" data-state="success">Эту страницу можно закрыть. Каждый участник команды входит под своим аккаунтом.</p>
+          <p class="note" data-state="error">Если приложение по-прежнему просит подтвердить email, повторите регистрацию с тем же email, чтобы получить новое письмо. Откройте ссылку из самого свежего письма.</p>
+        </section>
+        <noscript><p class="note">Ба барнома баргардед ва ворид шавед. / Вернитесь в приложение и войдите.</p></noscript>
+      </div>
+      <footer class="footer"><span>Incubator Manager · Android</span><a href="../../guide/" rel="noreferrer"><span data-copy="tg">Дастурҳои инкубаторҳо ↗</span><span lang="ru" data-copy="ru" hidden>Инструкции к инкубаторам ↗</span></a></footer>
+    </main>
+  </div>
+  <script>
+    (() => {
+      const buttons = document.querySelectorAll('[data-language]');
+      buttons.forEach(button => button.addEventListener('click', () => {
+        const language = button.dataset.language === 'ru' ? 'ru' : 'tg';
+        document.documentElement.lang = language;
+        document.title = language === 'ru' ? 'Подтверждение email — Incubator Manager' : 'Тасдиқи email — Incubator Manager';
+        document.querySelectorAll('[data-copy]').forEach(copy => { copy.hidden = copy.dataset.copy !== language; });
+        buttons.forEach(item => { item.setAttribute('aria-pressed', String(item.dataset.language === language)); });
+      }));
+    })();
+  </script>
+</body>
+</html>
